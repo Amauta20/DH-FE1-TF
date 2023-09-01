@@ -16,3 +16,28 @@ body {
     color: white;
 }
 
+@media (min-width: 481px) { 
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .d-flex-end {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .disp {
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+        /* flex-basis: calc(33.3%-60px); */
+        margin: 5px 10px ;
+        width: 100%;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
