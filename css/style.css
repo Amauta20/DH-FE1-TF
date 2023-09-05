@@ -49,25 +49,49 @@ header nav a:hover{
 
 
 /* Banner1 */
+.container {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 80%;
+}
+
 section{
     display: flex;
-    justify-content:center;
 }
 
 .central{
-    margin: 0 20%;
+    justify-content: space-between;
+}
+
+.fb-50 {
+    flex:1;
+    flex-basis: calc(50%-20px);
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.df-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mt-2 {
+    margin-top: 20px;
 }
 
 .text-central{
-    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 0 0 0 10px;
+    text-align: right;
 }
+
 .text-central h2{
     font-size: 2.5rem;
+    margin-top: 40px;
 }
+
 .text-central p{
     margin: 20px 0;
 }
