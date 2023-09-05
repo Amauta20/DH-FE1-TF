@@ -8,8 +8,11 @@
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0px;
+    width: 100vw;
 }
 
+/* Menú */
 header {
     align-items: center;
     color: white;
@@ -31,23 +34,24 @@ header nav a{
 }
 header nav a:hover{
     color:#7C8297;
+    cursor: pointer;
 }
 
 .btn-enlace{
     background-color: #8B48BF;
-    border-radius: 25px;
+    border-radius: 50px;
     color: white;
+    height: 44px;
+    width: 134px;
     padding: 10px 30px;
     text-decoration: none;
 }
 
-.btn-hamburguer{
-    display: none;
-}
 
+/* Banner1 */
 section{
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .central{
@@ -55,10 +59,11 @@ section{
 }
 
 .text-central{
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin: 0 0 0 10px;
-    text-align: right;
 }
 .text-central h2{
     font-size: 2.5rem;
@@ -68,29 +73,3 @@ section{
 }
 
 
-/* @media (min-width: 481px) { 
-
-    .w-100 {
-        width: 100%;
-    }
-
-    .d-flex-end {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .disp {
-        /* flex-grow: 1;
-        flex-shrink: 1; */
-        /* flex-basis: calc(33.3%-60px); */
-        /*margin: 5px 10px ;
-        width: 100%;
-    }
-
-    .nav-list {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
- */
