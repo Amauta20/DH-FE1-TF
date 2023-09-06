@@ -20,18 +20,22 @@ header {
     justify-content: space-between;
     padding: 40px 60px;
 }
+
 header nav ul{
     display: flex;
     justify-content: space-between;
 }
+
 header nav li{
     list-style: none;
     padding: 0 10px;
 }
+
 header nav a{
     color:#242E52;
     text-decoration: none;
 }
+
 header nav a:hover{
     color:#7C8297;
     cursor: pointer;
@@ -42,13 +46,13 @@ header nav a:hover{
     border-radius: 50px;
     color: white;
     height: 44px;
-    width: 134px;
     padding: 10px 30px;
     text-decoration: none;
+    width: 134px;
 }
 
 
-/* Banner1 */
+/* Section 1 */
 .container {
     margin: 0 auto;
     padding: 20px 0;
@@ -96,4 +100,191 @@ section{
     margin: 20px 0;
 }
 
+/* Section 2 */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    height: 168px;
+    position: relative;
+}
 
+.banner__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px; 
+    gap: 20px; 
+}
+
+.banner__col {
+    flex-grow: 1; 
+    font-family: 'Be Vietnam';
+    color: #FFFFFF;
+}
+
+.banner__col--left {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2; 
+}
+
+.banner__col--right {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4; 
+    text-align: left; 
+}
+
+/* Desktop Styles */
+.news {
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    height: 428px auto;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.news__item {
+    align-items: flex-start;
+    background-color: rgba(139, 72, 191, 0.3);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    width: 40%;
+}
+
+.news__button {
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    height: 43px;
+    width: 69px;
+}
+
+.news__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 16px;
+    color: #B3B2B7;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+}
+
+.news__number {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding-right: 15px;
+}
+
+.news__text {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding-right: 15px;
+}
+
+.news__text p:nth-child(1) {
+    color: #323851;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.news__text p:nth-child(2) {
+    color: #B3B2B7;
+    font-size: 16.3px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+
+
+
+@media(max-width:480px){
+    /* Menú */
+    header nav ul{
+        display: none;
+    }
+
+    header .btn-enlace{
+        display: none;
+    }
+
+    .btn-menu::after{
+        content: url("./../imagenes/icon-hamburger.svg");
+        alt: "icon-hamburguer";
+    }
+
+    /* Banner1 */
+    .container {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 95%;
+    }
+
+    .central{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;   
+    }
+
+    .central img {
+        height: 341.53px;
+        width: 400px;
+    }
+
+    .text-central{
+        text-align: end;
+    }
+    
+    .banner {
+        height: auto;
+        padding: 40px 20px; 
+        background-color: #3CDDF3;
+    }
+
+    .banner__content {
+        flex-direction: column;
+        align-items: center;
+        max-width: 480px;
+    }
+
+    .banner__col {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .banner__col--left {
+        font-size: 24px; 
+        margin-bottom: 5px; 
+    }
+
+    .banner__col--right {
+        font-size: 16px;
+        line-height: 1.4; 
+        margin-top: 10px;
+        text-align: left; 
+    }
+
+    
+
+}
